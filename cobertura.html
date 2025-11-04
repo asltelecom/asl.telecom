@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ASL Telecom — Cobertura</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- header -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <img src="img/logo.png" alt="ASL Telecom" class="logo" />
+        <div class="brand-text"><span class="name">ASL Telecomunicações</span><span class="tag">Internet fibra • Telefonia fixa • VOIP</span></div>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="planos.html">Planos</a>
+        <a href="telefonia.html">Telefonia Fixa</a>
+        <a href="cobertura.html">Cobertura</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+
+      <div class="actions">
+        <a class="btn btn-ghost" href="https://wa.me/5544984539929" target="_blank">WhatsApp</a>
+        <button class="hamburger" id="hamburger">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1>Área de Cobertura</h1>
+    <p class="muted">Verifique se já atendemos sua rua — digite seu endereço abaixo.</p>
+
+    <div class="card">
+      <form id="coverage-form" onsubmit="checkCoverage(event)">
+        <input type="text" id="addr" placeholder="Rua, nº, bairro, cidade" required>
+        <button class="btn btn-primary" type="submit">Verificar</button>
+      </form>
+      <div id="coverage-response" class="muted" style="margin-top:12px"></div>
+    </div>
+
+    <div class="map-placeholder card" style="margin-top:16px">
+      <p class="muted">MAPA: aqui você pode integrar um mapa real (Google Maps ou Leaflet) mostrando áreas atendidas. Se quiser eu já integro.</p>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>ASL Telecomunicações</strong>
+        <p class="muted">© ASL — Conectando você.</p>
+      </div>
+      <div>
+        <p class="muted">WhatsApp: <a href="https://wa.me/5544984539929">44984539929</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

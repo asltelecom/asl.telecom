@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ASL Telecom — Contato</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- header -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <img src="img/logo.png" alt="ASL Telecom" class="logo" />
+        <div class="brand-text"><span class="name">ASL Telecomunicações</span><span class="tag">Internet fibra • Telefonia fixa • VOIP</span></div>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="planos.html">Planos</a>
+        <a href="telefonia.html">Telefonia Fixa</a>
+        <a href="cobertura.html">Cobertura</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+
+      <div class="actions">
+        <a class="btn btn-ghost" href="https://wa.me/5544984539929" target="_blank">WhatsApp</a>
+        <button class="hamburger" id="hamburger">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1>Contato</h1>
+    <p class="muted">Fale conosco pelo formulário ou pelo WhatsApp — retornamos em até algumas horas.</p>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>Envie uma mensagem</h3>
+        <!-- Uses Formspree placeholder; replace ACTION with your Formspree endpoint or server endpoint -->
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+          <label>Nome</label>
+          <input type="text" name="name" required>
+          <label>E-mail</label>
+          <input type="email" name="email" required>
+          <label>Assunto</label>
+          <input type="text" name="subject">
+          <label>Mensagem</label>
+          <textarea name="message" rows="5" required></textarea>
+          <div style="display:flex;gap:8px;margin-top:8px">
+            <button class="btn btn-primary" type="submit">Enviar</button>
+            <a class="btn btn-secondary" href="https://wa.me/5544984539929" target="_blank">WhatsApp</a>
+          </div>
+        </form>
+      </div>
+
+      <div class="card">
+        <h3>Informações</h3>
+        <p class="muted"><strong>WhatsApp:</strong> <a href="https://wa.me/5544984539929">44984539929</a></p>
+        <p class="muted"><strong>Telefone:</strong> (44) 3233-0287</p>
+        <p class="muted"><strong>Email:</strong> <a href="mailto:contato@asltelecom.com">contato@asltelecom.com</a></p>
+        <p class="muted"><strong>Horário de atendimento:</strong> Seg–Sex 08:00–18:00 presencial • 18:00–20:00 online</p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>ASL Telecomunicações</strong>
+        <p class="muted">© ASL — Conectando você.</p>
+      </div>
+      <div>
+        <p class="muted">WhatsApp: <a href="https://wa.me/5544984539929">44984539929</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

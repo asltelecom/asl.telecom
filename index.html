@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ASL Telecom — Home</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <img src="img/logo.png" alt="ASL Telecom" class="logo" />
+        <div class="brand-text"><span class="name">ASL Telecomunicações</span><span class="tag">Internet fibra • Telefonia fixa • VOIP</span></div>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="planos.html">Planos</a>
+        <a href="telefonia.html">Telefonia Fixa</a>
+        <a href="cobertura.html">Cobertura</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+
+      <div class="actions">
+        <a class="btn btn-ghost" href="https://wa.me/5544984539929" target="_blank">WhatsApp</a>
+        <button class="hamburger" id="hamburger">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Conectamos você ao futuro — Fibra óptica de alta performance</h1>
+          <p>Internet simétrica, baixa latência, suporte local e soluções de telefonia fixa e VOIP para residências e empresas.</p>
+
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="planos.html">Ver Planos</a>
+            <a class="btn btn-secondary" href="https://wa.me/5544984539929" target="_blank">Contratar pelo WhatsApp</a>
+          </div>
+
+          <div class="highlights">
+            <div class="hl"><strong>Instalação grátis</strong><span>Sujeita à análise</span></div>
+            <div class="hl"><strong>Suporte Local</strong><span>Técnicos na sua cidade</span></div>
+            <div class="hl"><strong>Velocidade Simétrica</strong><span>Upload = Download</span></div>
+          </div>
+        </div>
+
+        <aside class="hero-aside">
+          <div class="card contact-card">
+            <h3>Fale com Vendas</h3>
+            <p class="muted">WhatsApp: <a href="https://wa.me/5544984539929">44984539929</a></p>
+            <p class="muted">Telefone: (44) 3233-0287</p>
+            <p class="muted">Email: <a href="mailto:contato@asltelecom.com">contato@asltelecom.com</a></p>
+            <a class="btn btn-primary" href="https://wa.me/5544984539929">Enviar mensagem</a>
+          </div>
+
+          <div class="card">
+            <h4>Verifique disponibilidade</h4>
+            <form id="quick-check" onsubmit="checkCoverage(event)">
+              <input type="text" id="address" placeholder="Rua, número, bairro, cidade" required>
+              <button class="btn btn-secondary" type="submit">Verificar</button>
+            </form>
+            <div id="coverage-result" class="muted" style="margin-top:8px"></div>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <section class="section container services">
+      <h2>Nossos Serviços</h2>
+      <div class="grid-3">
+        <div class="card feature">
+          <h3>Internet Fibra</h3>
+          <p>Conexão direta por fibra ótica até seu imóvel, com planos simétricos e alta estabilidade.</p>
+        </div>
+        <div class="card feature">
+          <h3>Telefonia Fixa / VOIP</h3>
+          <p>Linhas fixas digitais, planos de voz claros e integração para empresas.</p>
+        </div>
+        <div class="card feature">
+          <h3>Suporte Local</h3>
+          <p>Técnicos capacitados na região para instalação e manutenção rápida.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container why-us">
+      <h2>Por que escolher a ASL?</h2>
+      <ul class="benefits">
+        <li>Garantia de qualidade em links com monitoramento 24/7.</li>
+        <li>Planos com roteadores inclusos e configuração inicial.</li>
+        <li>Equipe local para suporte mais rápido.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>ASL Telecomunicações</strong>
+        <p class="muted">© ASL — Conectando você. CNPJ e informações legais.</p>
+      </div>
+      <div>
+        <p class="muted">Endereço: Sua cidade — Consulte disponibilidade</p>
+        <p class="muted">WhatsApp: <a href="https://wa.me/5544984539929">44984539929</a></p>
+      </div>
+      <div>
+        <p class="muted">Links</p>
+        <nav class="footer-nav">
+          <a href="planos.html">Planos</a>
+          <a href="telefonia.html">Telefonia</a>
+          <a href="cobertura.html">Cobertura</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
