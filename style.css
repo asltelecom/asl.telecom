@@ -1,16 +1,11 @@
-/* ===============================
-   ASL INTERNET - STYLE PRINCIPAL
-   =============================== */
-
-/* ===== CORES ===== */
 :root {
   --azul: #003366;
   --vermelho: #e63946;
   --branco: #ffffff;
-  --cinza-claro: #f5f5f5;
+  --cinza: #f4f4f4;
 }
 
-/* ===== RESET ===== */
+/* GERAL */
 * {
   margin: 0;
   padding: 0;
@@ -18,42 +13,62 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* ===== BODY ===== */
 body {
+  color: #222;
   background-color: var(--branco);
-  color: #333;
   line-height: 1.6;
 }
 
-/* ===== CONTAINERS ===== */
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* ===== HEADER ===== */
-header {
+/* HEADER */
+.site-header {
   background-color: var(--azul);
   color: var(--branco);
   padding: 15px 0;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 100;
 }
 
-header .container {
+.header-grid {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header h1 {
-  font-size: 1.8rem;
-  font-weight: 700;
+.brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--branco);
 }
 
-/* ===== MENU DE NAVEGAÇÃO ===== */
+.brand .logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-text .name {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.brand-text .tag {
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+/* NAV */
 .nav {
   display: flex;
   gap: 20px;
@@ -62,7 +77,6 @@ header h1 {
 .nav a {
   color: var(--branco);
   text-decoration: none;
-  font-weight: 500;
   transition: 0.3s;
 }
 
@@ -70,17 +84,16 @@ header h1 {
   color: var(--vermelho);
 }
 
-/* ===== MENU HAMBURGUER ===== */
+/* HAMBURGUER */
 .hamburger {
   display: none;
+  font-size: 28px;
+  color: var(--branco);
   background: none;
   border: none;
-  color: var(--branco);
-  font-size: 30px;
   cursor: pointer;
 }
 
-/* ===== MENU MOBILE ===== */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -89,93 +102,122 @@ header h1 {
   .nav {
     display: none;
     flex-direction: column;
+    background: var(--azul);
     position: absolute;
     top: 70px;
     right: 20px;
-    background: var(--azul);
     border-radius: 10px;
-    padding: 15px;
-    width: 200px;
+    padding: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  }
-
-  .nav a {
-    margin: 8px 0;
-    text-align: right;
   }
 
   .nav.active {
     display: flex;
-    animation: fadeIn 0.3s ease-in-out;
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
   }
 }
 
-/* ===== SEÇÕES ===== */
-section {
+/* HERO */
+.hero {
   padding: 60px 0;
+  background: linear-gradient(to right, var(--azul), var(--vermelho));
+  color: var(--branco);
 }
 
-section h2 {
-  text-align: center;
-  color: var(--vermelho);
+.hero-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero-text {
+  flex: 1 1 55%;
+}
+
+.hero-aside {
+  flex: 1 1 35%;
+}
+
+.hero h1 {
   font-size: 2rem;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
-/* ===== BOTÕES ===== */
+.hero-ctas {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
 .btn {
-  display: inline-block;
-  padding: 12px 28px;
+  padding: 12px 25px;
   border-radius: 8px;
-  font-weight: 600;
   text-decoration: none;
+  font-weight: 600;
   transition: 0.3s;
 }
 
 .btn-primary {
-  background-color: var(--vermelho);
+  background: var(--vermelho);
   color: var(--branco);
 }
 
 .btn-primary:hover {
-  background-color: #c62828;
+  background: #b92a36;
 }
 
 .btn-secondary {
-  background-color: var(--azul);
+  background: transparent;
   color: var(--branco);
-  border: 2px solid var(--vermelho);
+  border: 2px solid var(--branco);
 }
 
 .btn-secondary:hover {
-  background-color: var(--vermelho);
+  background: var(--vermelho);
 }
 
-/* ===== FOOTER ===== */
-footer {
+/* CARD DE CONTATO */
+.card {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.white {
+  color: var(--branco);
+}
+
+/* SEÇÕES */
+.section {
+  padding: 60px 0;
+}
+
+.section h2 {
+  color: var(--vermelho);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* FOOTER */
+.site-footer {
   background-color: var(--azul);
   color: var(--branco);
-  text-align: center;
-  padding: 20px 10px;
-  margin-top: 40px;
+  padding: 30px 0;
 }
 
-footer a {
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-nav a {
   color: var(--vermelho);
   text-decoration: none;
+  display: block;
 }
 
-footer a:hover {
+.footer-nav a:hover {
   text-decoration: underline;
 }
