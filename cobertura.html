@@ -1,65 +1,252 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ASL Telecom — Cobertura</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cobertura - ASL Telecom</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #071a35;
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #06162d;
+      padding: 15px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover, nav a.active {
+      color: #ff3b3b;
+    }
+
+    .whatsapp-link {
+      background: #25d366;
+      padding: 8px 15px;
+      border-radius: 20px;
+      color: #fff !important;
+      font-weight: 600;
+    }
+
+    .logo {
+      height: 50px;
+      margin: 0 auto 10px;
+      display: block;
+    }
+
+    section {
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+
+    .intro {
+      text-align: center;
+    }
+
+    .intro h1 {
+      font-size: 2.5rem;
+      color: #ff3b3b;
+      margin-bottom: 15px;
+    }
+
+    .intro p {
+      font-size: 1.1rem;
+      color: #cbd3e1;
+      margin-bottom: 60px;
+      line-height: 1.6;
+    }
+
+    .consulta {
+      background-color: #fff;
+      color: #071a35;
+      border-radius: 18px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+      margin-bottom: 60px;
+    }
+
+    .consulta h2 {
+      color: #ff3b3b;
+      margin-bottom: 20px;
+    }
+
+    .consulta input {
+      padding: 12px;
+      border-radius: 30px;
+      border: 2px solid #ff3b3b;
+      width: 250px;
+      font-size: 1rem;
+      outline: none;
+      margin-right: 10px;
+    }
+
+    .consulta button {
+      padding: 12px 25px;
+      border-radius: 30px;
+      background-color: #ff3b3b;
+      color: #fff;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .consulta button:hover {
+      background-color: #e42f2f;
+      transform: scale(1.05);
+    }
+
+    .regioes {
+      text-align: center;
+    }
+
+    .regioes h2 {
+      color: #ff3b3b;
+      margin-bottom: 20px;
+    }
+
+    .regioes ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.1rem;
+      color: #cbd3e1;
+      line-height: 1.8;
+    }
+
+    .btn-whats {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 12px 30px;
+      background: #25d366;
+      color: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .btn-whats:hover {
+      background: #1db054;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #06162d;
+      color: #fff;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 80px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .consulta input {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .consulta button {
+        width: 100%;
+      }
+
+      header nav {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
-  <!-- header -->
-  <header class="site-header">
-    <div class="container">
-      <a class="brand" href="index.html">
-        <img src="img/logo.png" alt="ASL Telecom" class="logo" />
-        <div class="brand-text"><span class="name">ASL Telecomunicações</span><span class="tag">Internet fibra • Telefonia fixa • VOIP</span></div>
-      </a>
 
-      <nav class="nav" id="nav">
-        <a href="index.html">Home</a>
-        <a href="planos.html">Planos</a>
-        <a href="telefonia.html">Telefonia Fixa</a>
-        <a href="cobertura.html">Cobertura</a>
-        <a href="contato.html">Contato</a>
-      </nav>
-
-      <div class="actions">
-        <a class="btn btn-ghost" href="https://wa.me/5544984539929" target="_blank">WhatsApp</a>
-        <button class="hamburger" id="hamburger">☰</button>
-      </div>
-    </div>
+  <header>
+    <img src="logo.png" alt="ASL Telecom" class="logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="planos.html">Planos</a>
+      <a href="telefonia.html">Telefonia</a>
+      <a href="cobertura.html" class="active">Cobertura</a>
+      <a href="contato.html">Contato</a>
+      <a href="https://wa.me/5544984539929" class="whatsapp-link">WhatsApp</a>
+    </nav>
   </header>
 
-  <main class="container section">
-    <h1>Área de Cobertura</h1>
-    <p class="muted">Verifique se já atendemos sua rua — digite seu endereço abaixo.</p>
+  <section class="intro">
+    <h1>Verifique a Cobertura da ASL Telecom</h1>
+    <p>
+      Estamos em constante expansão!  
+      Confira abaixo se já temos cobertura de internet na sua região.  
+      Caso ainda não tenhamos, entre em contato para saber quando chegaremos até você!
+    </p>
+  </section>
 
-    <div class="card">
-      <form id="coverage-form" onsubmit="checkCoverage(event)">
-        <input type="text" id="addr" placeholder="Rua, nº, bairro, cidade" required>
-        <button class="btn btn-primary" type="submit">Verificar</button>
-      </form>
-      <div id="coverage-response" class="muted" style="margin-top:12px"></div>
-    </div>
+  <section class="consulta">
+    <h2>Consultar Cobertura</h2>
+    <input type="text" id="cep" placeholder="Digite seu CEP">
+    <button onclick="consultarCEP()">Verificar</button>
+    <p id="resultado" style="margin-top: 20px; font-weight: 600;"></p>
+  </section>
 
-    <div class="map-placeholder card" style="margin-top:16px">
-      <p class="muted">MAPA: aqui você pode integrar um mapa real (Google Maps ou Leaflet) mostrando áreas atendidas. Se quiser eu já integro.</p>
-    </div>
+  <section class="regioes">
+    <h2>Cidades Atendidas</h2>
+    <ul>
+      <li>🌐 Umuarama - PR</li>
+      <li>🌐 Cruzeiro do Oeste - PR</li>
+      <li>🌐 Pérola - PR</li>
+      <li>🌐 Xambrê - PR</li>
+      <li>🌐 Douradina - PR</li>
+      <li>🌐 Icaraíma - PR</li>
+      <li>🌐 Mariluz - PR</li>
+    </ul>
+    <a href="https://wa.me/5544984539929" class="btn-whats">Falar com Atendimento</a>
+  </section>
 
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <strong>ASL Telecomunicações</strong>
-        <p class="muted">© ASL — Conectando você.</p>
-      </div>
-      <div>
-        <p class="muted">WhatsApp: <a href="https://wa.me/5544984539929">44984539929</a></p>
-      </div>
-    </div>
+  <footer>
+    <p>© 2025 ASL Telecomunicações — Internet Fibra e Telefonia VoIP com cobertura no Noroeste do Paraná</p>
   </footer>
 
-  <script src="assets/js/main.js"></script>
+  <script>
+    function consultarCEP() {
+      const cep = document.getElementById("cep").value.trim();
+      const resultado = document.getElementById("resultado");
+      if (!cep) {
+        resultado.textContent = "Por favor, digite um CEP válido.";
+        resultado.style.color = "#ff3b3b";
+        return;
+      }
+
+      // Simulação de cobertura
+      const cepsAtendidos = ["87501", "87502", "87503", "87504", "87505"];
+      const encontrado = cepsAtendidos.some(c => cep.startsWith(c));
+
+      if (encontrado) {
+        resultado.textContent = "🎉 Temos cobertura na sua região!";
+        resultado.style.color = "#25d366";
+      } else {
+        resultado.textContent = "😕 Ainda não atendemos seu endereço. Entre em contato conosco!";
+        resultado.style.color = "#ff3b3b";
+      }
+    }
+  </script>
+
 </body>
 </html>
