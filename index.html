@@ -5,13 +5,235 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ASL Telecom — Home</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #001f3f;
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .site-header {
+      background-color: #001a35;
+      padding: 20px 0;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .brand img {
+      width: 70px;
+      margin-right: 15px;
+    }
+
+    .brand-text .name {
+      font-weight: 600;
+      display: block;
+      font-size: 1.1rem;
+    }
+
+    .brand-text .tag {
+      color: #d0d8e8;
+      font-size: 0.85rem;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff3b3b;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary {
+      background-color: #ff3b3b;
+      color: white;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #e22f2f;
+    }
+
+    .btn-secondary {
+      background-color: #013f7f;
+      color: white;
+      border: 1px solid #ff3b3b;
+    }
+
+    .btn-secondary:hover {
+      background-color: #ff3b3b;
+      color: white;
+    }
+
+    .btn-ghost {
+      border: 1px solid #ff3b3b;
+      color: #ff3b3b;
+      background: transparent;
+    }
+
+    .btn-ghost:hover {
+      background-color: #ff3b3b;
+      color: white;
+    }
+
+    .hero {
+      padding: 80px 0;
+      background: linear-gradient(to bottom right, #001f3f, #012b5c);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero-text h1 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .hero-text p {
+      color: #d6ddee;
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+
+    .hero-ctas {
+      margin-bottom: 25px;
+    }
+
+    .highlights {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .hl {
+      background-color: #012b5c;
+      border-left: 4px solid #ff3b3b;
+      padding: 10px 15px;
+      border-radius: 6px;
+      flex: 1;
+      min-width: 150px;
+    }
+
+    .hl strong {
+      display: block;
+      color: #fff;
+    }
+
+    .hl span {
+      color: #cfd8e0;
+      font-size: 0.9rem;
+    }
+
+    .contact-card, .card {
+      background-color: #012b5c;
+      border-radius: 10px;
+      padding: 25px;
+      color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .card h3, .card h4 {
+      color: #ff3b3b;
+    }
+
+    .muted {
+      color: #cfd8e0;
+      font-size: 0.9rem;
+    }
+
+    .services h2, .why-us h2 {
+      text-align: center;
+      color: #ff3b3b;
+      margin-bottom: 30px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .feature {
+      background-color: #012b5c;
+      padding: 25px;
+      border-radius: 12px;
+      transition: transform 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+
+    .benefits {
+      list-style: none;
+      padding: 0;
+      max-width: 700px;
+      margin: 0 auto;
+      color: #cfd8e0;
+    }
+
+    .benefits li {
+      padding: 10px 0;
+      border-bottom: 1px solid #003366;
+    }
+
+    footer {
+      background-color: #001a35;
+      padding: 40px 0;
+      margin-top: 60px;
+    }
+
+    footer a {
+      color: #ff3b3b;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
     <div class="container">
       <a class="brand" href="index.html">
         <img src="logo.png" alt="ASL Telecom" class="logo" />
-        <div class="brand-text"><span class="name">ASL Telecomunicações</span><span class="tag">Internet fibra • Telefonia fixa • VOIP</span></div>
+        <div class="brand-text">
+          <span class="name">ASL Telecomunicações</span>
+          <span class="tag">Internet fibra • Telefonia fixa • VOIP</span>
+        </div>
       </a>
 
       <nav class="nav" id="nav">
@@ -24,7 +246,6 @@
 
       <div class="actions">
         <a class="btn btn-ghost" href="https://wa.me/5544984539929" target="_blank">WhatsApp</a>
-        <button class="hamburger" id="hamburger">☰</button>
       </div>
     </div>
   </header>
@@ -34,7 +255,7 @@
       <div class="container hero-grid">
         <div class="hero-text">
           <h1>Conectamos você ao futuro — Fibra óptica de alta performance</h1>
-          <p>Internet simétrica, baixa latência, suporte local e soluções de telefonia fixa e VOIP para residências e empresas.</p>
+          <p>Internet simétrica, baixa latência, suporte local e soluções de telefonia VOIP para residências e empresas.</p>
 
           <div class="hero-ctas">
             <a class="btn btn-primary" href="planos.html">Ver Planos</a>
@@ -43,7 +264,7 @@
 
           <div class="highlights">
             <div class="hl"><strong>Instalação grátis</strong><span>Sujeita à análise</span></div>
-            <div class="hl"><strong>Suporte Local</strong><span>Técnicos na sua cidade</span></div>
+            <div class="hl"><strong>Suporte Local</strong><span>Técnicos em Mandaguari</span></div>
             <div class="hl"><strong>Velocidade Simétrica</strong><span>Upload = Download</span></div>
           </div>
         </div>
@@ -53,7 +274,7 @@
             <h3>Fale com Vendas</h3>
             <p class="muted">WhatsApp: <a href="https://wa.me/5544984539929">44984539929</a></p>
             <p class="muted">Telefone: (44) 3233-0287</p>
-            <p class="muted">Email: <a href="mailto:contato@asltelecom.com">contato@asltelecom.com</a></p>
+            <p class="muted">Email: <a href="mailto:aslinternet2@gmail.com">aslinternet2@gmail.com</a></p>
             <a class="btn btn-primary" href="https://wa.me/5544984539929">Enviar mensagem</a>
           </div>
 
@@ -75,15 +296,15 @@
       <div class="grid-3">
         <div class="card feature">
           <h3>Internet Fibra</h3>
-          <p>Conexão direta por fibra ótica até seu imóvel, com planos simétricos e alta estabilidade.</p>
+          <p>Conexão direta por fibra óptica até seu imóvel, com planos simétricos e alta estabilidade.</p>
         </div>
         <div class="card feature">
-          <h3>Telefonia Fixa / VOIP</h3>
-          <p>Linhas fixas digitais, planos de voz claros e integração para empresas.</p>
+          <h3>Telefonia VOIP</h3>
+          <p>Linhas digitais com excelente qualidade de som e economia para empresas e residências.</p>
         </div>
         <div class="card feature">
           <h3>Suporte Local</h3>
-          <p>Técnicos capacitados na região para instalação e manutenção rápida.</p>
+          <p>Técnicos capacitados em Mandaguari para instalação e manutenção rápida.</p>
         </div>
       </div>
     </section>
@@ -96,17 +317,16 @@
         <li>Equipe local para suporte mais rápido.</li>
       </ul>
     </section>
-
   </main>
 
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
         <strong>ASL Telecomunicações</strong>
-        <p class="muted">© ASL — Conectando você. CNPJ e informações legais.</p>
+        <p class="muted">© 2025 ASL — Conectando você. Todos os direitos reservados.</p>
       </div>
       <div>
-        <p class="muted">Endereço: Sua cidade — Consulte disponibilidade</p>
+        <p class="muted">Endereço: Mandaguari — PR</p>
         <p class="muted">WhatsApp: <a href="https://wa.me/5544984539929">44984539929</a></p>
       </div>
       <div>
