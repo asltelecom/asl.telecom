@@ -1,75 +1,214 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ASL Telecom — Telefonia Fixa</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telefonia - ASL Telecom</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #071a35;
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #06162d;
+      padding: 15px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover, nav a.active {
+      color: #ff3b3b;
+    }
+
+    .whatsapp-link {
+      background: #25d366;
+      padding: 8px 15px;
+      border-radius: 20px;
+      color: #fff !important;
+      font-weight: 600;
+    }
+
+    .logo {
+      height: 50px;
+      margin: 0 auto 10px;
+      display: block;
+    }
+
+    section {
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+
+    .intro {
+      text-align: center;
+    }
+
+    .intro h1 {
+      font-size: 2.5rem;
+      color: #ff3b3b;
+      margin-bottom: 15px;
+    }
+
+    .intro p {
+      font-size: 1.1rem;
+      color: #cbd3e1;
+      margin-bottom: 60px;
+      line-height: 1.6;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: #fff;
+      color: #0a1831;
+      border-radius: 18px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+      border-top: 6px solid #ff3b3b;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(255,59,59,0.3);
+    }
+
+    .card h2 {
+      color: #071a35;
+      margin-bottom: 10px;
+      font-size: 1.4rem;
+    }
+
+    .card p {
+      color: #444;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      background: #ff3b3b;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .btn:hover {
+      background: #e42f2f;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #06162d;
+      color: #fff;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 80px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header nav {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
-  <!-- header -->
-  <header class="site-header">
-    <div class="container">
-      <a class="brand" href="index.html">
-        <img src="img/logo.png" alt="ASL Telecom" class="logo" />
-        <div class="brand-text"><span class="name">ASL Telecomunicações</span><span class="tag">Internet fibra • Telefonia fixa • VOIP</span></div>
-      </a>
 
-      <nav class="nav" id="nav">
-        <a href="index.html">Home</a>
-        <a href="planos.html">Planos</a>
-        <a href="telefonia.html">Telefonia Fixa</a>
-        <a href="cobertura.html">Cobertura</a>
-        <a href="contato.html">Contato</a>
-      </nav>
-
-      <div class="actions">
-        <a class="btn btn-ghost" href="https://wa.me/5544984539929" target="_blank">WhatsApp</a>
-        <button class="hamburger" id="hamburger">☰</button>
-      </div>
-    </div>
+  <header>
+    <img src="logo.png" alt="ASL Telecom" class="logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="planos.html">Planos</a>
+      <a href="telefonia.html" class="active">Telefonia</a>
+      <a href="cobertura.html">Cobertura</a>
+      <a href="contato.html">Contato</a>
+      <a href="https://wa.me/5544984539929" class="whatsapp-link">WhatsApp</a>
+    </nav>
   </header>
 
-  <main class="container section">
-    <h1>Telefonia Fixa e VOIP</h1>
-    <p class="muted">Planos de voz com tarifas competitivas, portabilidade e integração com PABX virtual para empresas.</p>
+  <section class="intro">
+    <h1>Telefonia ASL</h1>
+    <p>
+      Tenha qualidade, estabilidade e custo-benefício na sua comunicação.  
+      A ASL Telecom oferece soluções em <strong>telefonia fixa e VoIP</strong>  
+      para residências e empresas, com tecnologia moderna e suporte local.
+    </p>
+  </section>
 
-    <div class="grid-2">
-      <div class="card">
-        <h3>Plano Residencial</h3>
-        <ul>
-          <li>Número nacional</li>
-          <li>Atendimento por app e telefone</li>
-          <li>Tarifas reduzidas para chamadas locais</li>
-        </ul>
-        <a class="btn btn-primary" href="https://wa.me/5544984539929">Contratar</a>
-      </div>
-
-      <div class="card">
-        <h3>Plano Empresarial</h3>
-        <ul>
-          <li>PABX virtual e múltiplas linhas</li>
-          <li>Relatórios e gravação de chamadas</li>
-          <li>Suporte técnico prioritário</li>
-        </ul>
-        <a class="btn btn-primary" href="https://wa.me/5544984539929">Solicitar proposta</a>
-      </div>
+  <section class="cards">
+    <div class="card">
+      <h2>📞 Telefonia Fixa</h2>
+      <p>
+        Tenha uma linha fixa com número local, ligações ilimitadas para qualquer operadora e total estabilidade na comunicação.
+        Ideal para residências e pequenas empresas que buscam confiabilidade e custo acessível.
+      </p>
+      <a href="https://wa.me/5544984539929" class="btn">Assinar Agora</a>
     </div>
 
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <strong>ASL Telecomunicações</strong>
-        <p class="muted">© ASL — Conectando você.</p>
-      </div>
-      <div>
-        <p class="muted">WhatsApp: <a href="https://wa.me/5544984539929">44984539929</a></p>
-      </div>
+    <div class="card">
+      <h2>🌐 Telefonia VoIP</h2>
+      <p>
+        Faça e receba ligações pela internet com qualidade digital e tarifas muito mais baixas.  
+        Utilize seu número fixo em qualquer lugar, diretamente no computador ou celular.
+      </p>
+      <a href="https://wa.me/5544984539929" class="btn">Saber Mais</a>
     </div>
+
+    <div class="card">
+      <h2>🔁 Portabilidade</h2>
+      <p>
+        Traga seu número atual para a ASL Telecom sem complicações!  
+        Mantemos seu número, migramos seus contatos e garantimos uma transição rápida e segura.
+      </p>
+      <a href="https://wa.me/5544984539929" class="btn">Portar Agora</a>
+    </div>
+  </section>
+
+  <section class="intro">
+    <h1>Benefícios Exclusivos</h1>
+    <p>
+      📶 Chamadas com qualidade HD <br>
+      💬 Suporte técnico local e rápido <br>
+      💰 Redução de custos operacionais <br>
+      🔒 Alta segurança e estabilidade <br>
+      🔄 Integração total com nossos planos de internet
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 ASL Telecomunicações — Soluções completas em internet e telefonia</p>
   </footer>
 
-  <script src="assets/js/main.js"></script>
 </body>
 </html>
