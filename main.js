@@ -28,3 +28,7 @@ function checkCoverage(e){
 document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>{
   if(window.innerWidth<980) document.getElementById('nav').style.display='none';
 }))
+// Menu hamburguer responsivo
+document.getElementById('hamburger').addEventListener('click', function () {
+  document.getElementById('nav').classList.toggle('active');
+});
