@@ -3,50 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Planos | ASL Telecom</title>
+  <title>Planos — ASL Telecom</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="main.js" defer></script>
 </head>
 <body>
   <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="planos.html" class="active">Planos</a></li>
-        <li><a href="telefonia.html">Telefonia</a></li>
-        <li><a href="cobertura.html">Cobertura</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
+    <div class="container nav">
+      <img src="logo.png" alt="ASL Telecom" class="logo" />
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="planos.html" class="active">Planos</a>
+        <a href="telefonia.html">Telefonia Fixa</a>
+        <a href="cobertura.html">Cobertura</a>
+        <a href="contato.html">Contato</a>
+        <a href="https://wa.me/5544984539929" class="whatsapp-link">WhatsApp</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="conteudo">
-    <h1>Nossos Planos de Internet</h1>
-    <p>Conecte-se com a melhor qualidade e velocidade da sua região.</p>
+  <section class="hero">
+    <div class="container">
+      <h1>Planos de Internet</h1>
+      <p>Escolha o plano ideal para sua casa ou empresa. Internet fibra óptica com alta velocidade e estabilidade.</p>
+    </div>
+  </section>
 
-    <section class="planos">
-      <div class="plano">
-        <h2>Plano Básico</h2>
-        <p>100 Mb/s de velocidade</p>
-        <p><strong>R$ 79,90/mês</strong></p>
-      </div>
+  <section class="planos container">
+    <div class="plano-card">
+      <h2>Plano 100 Mbps</h2>
+      <ul>
+        <li>Upload simétrico</li>
+        <li>Instalação gratuita</li>
+        <li>Roteador incluso</li>
+      </ul>
+      <a href="https://wa.me/5544984539929" class="btn">Assinar agora</a>
+    </div>
 
-      <div class="plano">
-        <h2>Plano Avançado</h2>
-        <p>300 Mb/s de velocidade</p>
-        <p><strong>R$ 109,90/mês</strong></p>
-      </div>
+    <div class="plano-card destaque">
+      <h2>Plano 350 Mbps</h2>
+      <ul>
+        <li>Ideal para streaming e home office</li>
+        <li>Roteador potente incluso</li>
+        <li>Suporte prioritário</li>
+      </ul>
+      <a href="https://wa.me/5544984539929" class="btn">Assinar agora</a>
+    </div>
 
-      <div class="plano">
-        <h2>Plano Ultra</h2>
-        <p>600 Mb/s de velocidade</p>
-        <p><strong>R$ 149,90/mês</strong></p>
-      </div>
-    </section>
-  </main>
+    <div class="plano-card">
+      <h2>Plano 1 Gbps</h2>
+      <ul>
+        <li>Latência ultrabaixa</li>
+        <li>Monitoramento proativo</li>
+        <li>Suporte empresarial</li>
+      </ul>
+      <a href="https://wa.me/5544984539929" class="btn">Assinar agora</a>
+    </div>
+  </section>
 
   <footer>
-    <p>© 2025 ASL Telecom. Todos os direitos reservados.</p>
+    <p>© ASL Telecomunicações — Conectando você ao futuro</p>
   </footer>
 </body>
 </html>
