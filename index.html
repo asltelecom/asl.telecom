@@ -172,6 +172,16 @@
       font-size: 0.9rem;
     }
 
+    .white-text a {
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .white-text a:hover {
+      color: #ff3b3b;
+    }
+
     .services h2, .why-us h2 {
       text-align: center;
       color: #ff3b3b;
@@ -271,23 +281,13 @@
 
         <aside class="hero-aside">
           <div class="card contact-card">
-            <h3>Fale com Vendas</h3>
-            <p class="muted">WhatsApp: <a href="https://wa.me/5544984539929">44984539929</a></p>
-            <p class="muted">Telefone: (44) 3233-0287</p>
-            <p class="muted">Email: <a href="mailto:aslinternet2@gmail.com">aslinternet2@gmail.com</a></p>
+            <h3>Fale com Vendedor</h3>
+            <p class="white-text">WhatsApp: <a href="https://wa.me/5544984539929">44984539929</a></p>
+            <p class="white-text">Telefone: (44) 3233-0287</p>
+            <p class="white-text">Email: <a href="mailto:aslinternet2@gmail.com">aslinternet2@gmail.com</a></p>
             <a class="btn btn-primary" href="https://wa.me/5544984539929">Enviar mensagem</a>
           </div>
-
-          <div class="card">
-            <h4>Verifique disponibilidade</h4>
-            <form id="quick-check" onsubmit="checkCoverage(event)">
-              <input type="text" id="address" placeholder="Rua, número, bairro, cidade" required>
-              <button class="btn btn-secondary" type="submit">Verificar</button>
-            </form>
-            <div id="coverage-result" class="muted" style="margin-top:8px"></div>
-          </div>
         </aside>
-
       </div>
     </section>
 
@@ -340,7 +340,5 @@
       </div>
     </div>
   </footer>
-
-  <script src="main.js"></script>
 </body>
 </html>
