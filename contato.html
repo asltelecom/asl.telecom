@@ -1,82 +1,224 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ASL Telecom — Contato</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASL Telecom - Contato</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: #001f3f;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #001a35;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 160px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff3b3b;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      color: #cfd8e0;
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+    }
+
+    .contact-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .contact-card {
+      background-color: #012b5c;
+      border-radius: 15px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .contact-card h3 {
+      color: #ff3b3b;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+
+    .contact-card p {
+      font-size: 1rem;
+      color: #dbe5f3;
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: 60px auto;
+      background-color: #012b5c;
+      border-radius: 15px;
+      padding: 30px;
+      text-align: left;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .contact-form label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: #fff;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      outline: none;
+    }
+
+    .contact-form button {
+      background-color: #ff3b3b;
+      color: white;
+      border: none;
+      padding: 14px 25px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    .contact-form button:hover {
+      background-color: #e63535;
+    }
+
+    .whatsapp-btn {
+      display: inline-block;
+      margin-top: 40px;
+      background-color: #ff3b3b;
+      color: white;
+      border: none;
+      padding: 15px 40px;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #e63535;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 80px;
+      padding: 25px;
+      text-align: center;
+      background-color: #001a35;
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-  <!-- header -->
-  <header class="site-header">
-    <div class="container">
-      <a class="brand" href="index.html">
-        <img src="img/logo.png" alt="ASL Telecom" class="logo" />
-        <div class="brand-text"><span class="name">ASL Telecomunicações</span><span class="tag">Internet fibra • Telefonia fixa • VOIP</span></div>
-      </a>
-
-      <nav class="nav" id="nav">
-        <a href="index.html">Home</a>
-        <a href="planos.html">Planos</a>
-        <a href="telefonia.html">Telefonia Fixa</a>
-        <a href="cobertura.html">Cobertura</a>
-        <a href="contato.html">Contato</a>
-      </nav>
-
-      <div class="actions">
-        <a class="btn btn-ghost" href="https://wa.me/5544984539929" target="_blank">WhatsApp</a>
-        <button class="hamburger" id="hamburger">☰</button>
-      </div>
-    </div>
+  <header>
+    <img src="logo.png" alt="ASL Telecom" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="planos.html">Planos</a>
+      <a href="telefonia.html">Telefonia</a>
+      <a href="cobertura.html">Cobertura</a>
+      <a href="contato.html">Contato</a>
+    </nav>
   </header>
 
-  <main class="container section">
-    <h1>Contato</h1>
-    <p class="muted">Fale conosco pelo formulário ou pelo WhatsApp — retornamos em até algumas horas.</p>
+  <section class="hero">
+    <h1>Entre em Contato</h1>
+    <p>Fale com nossa equipe pelo canal que preferir. Estamos prontos para te atender!</p>
+  </section>
 
-    <div class="grid-2">
-      <div class="card">
-        <h3>Envie uma mensagem</h3>
-        <!-- Uses Formspree placeholder; replace ACTION with your Formspree endpoint or server endpoint -->
-        <form action="https://formspree.io/f/your-form-id" method="POST">
-          <label>Nome</label>
-          <input type="text" name="name" required>
-          <label>E-mail</label>
-          <input type="email" name="email" required>
-          <label>Assunto</label>
-          <input type="text" name="subject">
-          <label>Mensagem</label>
-          <textarea name="message" rows="5" required></textarea>
-          <div style="display:flex;gap:8px;margin-top:8px">
-            <button class="btn btn-primary" type="submit">Enviar</button>
-            <a class="btn btn-secondary" href="https://wa.me/5544984539929" target="_blank">WhatsApp</a>
-          </div>
-        </form>
-      </div>
-
-      <div class="card">
-        <h3>Informações</h3>
-        <p class="muted"><strong>WhatsApp:</strong> <a href="https://wa.me/5544984539929">44984539929</a></p>
-        <p class="muted"><strong>Telefone:</strong> (44) 3233-0287</p>
-        <p class="muted"><strong>Email:</strong> <a href="mailto:contato@asltelecom.com">contato@asltelecom.com</a></p>
-        <p class="muted"><strong>Horário de atendimento:</strong> Seg–Sex 08:00–18:00 presencial • 18:00–20:00 online</p>
-      </div>
+  <section class="contact-container">
+    <div class="contact-card">
+      <h3>📞 Telefone</h3>
+      <p>(44) 99694-004</p>
     </div>
 
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <strong>ASL Telecomunicações</strong>
-        <p class="muted">© ASL — Conectando você.</p>
-      </div>
-      <div>
-        <p class="muted">WhatsApp: <a href="https://wa.me/5544984539929">44984539929</a></p>
-      </div>
+    <div class="contact-card">
+      <h3>💬 WhatsApp</h3>
+      <p>(44) 99694-004</p>
     </div>
+
+    <div class="contact-card">
+      <h3>📧 E-mail</h3>
+      <p>contato@asltelecom.com</p>
+    </div>
+  </section>
+
+  <section class="contact-form">
+    <h2>Envie uma mensagem</h2>
+    <form action="#" method="post">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required />
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required />
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem..." required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div style="text-align:center;">
+      <a class="whatsapp-btn" href="https://wa.me/554499694004" target="_blank">💬 Falar no WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 ASL Telecom - Todos os direitos reservados</p>
   </footer>
-
-  <script src="assets/js/main.js"></script>
 </body>
 </html>
