@@ -4,120 +4,81 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Teste de Velocidade - ASL Telecom</title>
-  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="icon" href="logo.png" type="image/png" />
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #001f3f;
-      color: white;
+      background-color: #001a33;
+      color: #fff;
       text-align: center;
     }
 
     header {
-      background-color: #001a33;
-      padding: 10px 0;
-      border-bottom: 3px solid red;
+      background-color: #002b5c;
+      padding: 20px 0;
+      border-bottom: 3px solid #e50914;
     }
 
-    .logo {
-      height: 90px;
-    }
-
-    nav {
-      margin-top: 10px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-size: 18px;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #ff0000;
+    header img {
+      height: 80px;
     }
 
     h1 {
-      margin-top: 20px;
-      color: white;
+      font-size: 2em;
+      margin-top: 30px;
     }
 
-    iframe {
-      width: 90%;
-      height: 600px;
-      border: none;
-      background-color: #00284d;
+    p {
+      font-size: 1.1em;
+      color: #ccc;
+    }
+
+    .teste-container {
+      background-color: #002147;
+      padding: 40px;
+      border-radius: 15px;
+      max-width: 600px;
+      margin: 50px auto;
+      box-shadow: 0 0 15px rgba(0, 191, 255, 0.2);
+    }
+
+    .teste-btn {
+      display: inline-block;
+      background-color: #e50914;
+      color: white;
+      padding: 15px 30px;
       border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+      font-size: 1.2rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .teste-btn:hover {
+      background-color: #ff1a1a;
     }
 
     footer {
-      background-color: #001a33;
-      padding: 20px;
-      margin-top: 40px;
-      border-top: 3px solid red;
-    }
-
-    .whatsapp-btn {
-      display: inline-block;
-      background-color: #25D366;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-
-    .whatsapp-btn:hover {
-      background-color: #1ebe5d;
-    }
-
-    @media (max-width: 768px) {
-      nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      nav a {
-        margin: 10px 0;
-      }
-
-      iframe {
-        height: 500px;
-      }
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Logo ASL Telecom" class="logo" />
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="planos.html">Planos</a>
-      <a href="telefonia.html">Telefonia</a>
-      <a href="cobertura.html">Cobertura</a>
-      <a href="contato.html">Contato</a>
-      <a href="teste.html"><b>Teste</b></a>
-    </nav>
+    <img src="logo.png" alt="ASL Telecom Logo" />
   </header>
 
-  <h1>Teste de Velocidade</h1>
-  <p>Verifique o desempenho da sua conexão ASL Telecom</p>
-
-  <iframe src="https://librespeed.org/"></iframe>
+  <div class="teste-container">
+    <h1>Teste de Velocidade</h1>
+    <p>Verifique o desempenho da sua conexão ASL Telecom.</p>
+    <a href="https://www.speedtest.net" target="_blank" class="teste-btn">Iniciar Teste</a>
+  </div>
 
   <footer>
-    <p>📍 Avenida Amazonas, 434 — Mandaguari, Paraná</p>
-    <p>📞 (44) 3233-0287 | 📱 (44) 9 8453-9929 | ✉️ aslinternet2@gmail.com</p>
-    <a class="whatsapp-btn" href="https://wa.me/554484539929" target="_blank">
-      Fale com um vendedor no WhatsApp
-    </a>
-    <p style="margin-top:10px;">© 2025 ASL Telecom — Todos os direitos reservados</p>
+    &copy; 2025 ASL Telecom - Todos os direitos reservados
   </footer>
 </body>
 </html>
