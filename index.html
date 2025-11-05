@@ -1,221 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ASL Telecom — Home</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    /* ==== ESTILO PRINCIPAL ==== */
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #021d36;
-      color: #fff;
-    }
-
-    header {
-      background-color: #02152a;
-      border-bottom: 2px solid #d62828;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 15px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo {
-      height: 70px;
-    }
-
-    .nav {
-      display: flex;
-      gap: 25px;
-    }
-
-    .nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-      transition: 0.3s;
-    }
-
-    .nav a:hover {
-      color: #d62828;
-    }
-
-    /* ==== MENU MOBILE ==== */
-    .hamburger {
-      display: none;
-      font-size: 26px;
-      background: none;
-      border: none;
-      color: white;
-      cursor: pointer;
-    }
-
-    @media (max-width: 768px) {
-      .nav {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        background: #031c34;
-        padding: 10px 0;
-      }
-
-      .nav.active {
-        display: flex;
-      }
-
-      .hamburger {
-        display: block;
-      }
-
-      .container {
-        flex-wrap: wrap;
-      }
-    }
-
-    /* ==== HERO ==== */
-    .hero {
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 2rem;
-      margin-bottom: 15px;
-      color: #fff;
-    }
-
-    .hero p {
-      color: #ddd;
-      font-size: 1.1rem;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      margin: 10px 5px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .btn-primary {
-      background-color: #007bff;
-      color: white;
-    }
-
-    .btn-secondary {
-      background-color: #d62828;
-      color: white;
-    }
-
-    .highlights {
-      margin-top: 25px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .highlights div {
-      background: #03223f;
-      padding: 10px 15px;
-      border-radius: 8px;
-    }
-
-    /* ==== CONTATO ==== */
-    .contact-card {
-      background: #03223f;
-      margin: 50px auto;
-      padding: 20px;
-      max-width: 400px;
-      border-radius: 10px;
-      border-left: 4px solid #d62828;
-    }
-
-    .contact-card h3 {
-      margin-top: 0;
-      color: #fff;
-    }
-
-    .contact-card p a {
-      color: white;
-      text-decoration: underline;
-    }
-
-    footer {
-      background-color: #02152a;
-      padding: 25px;
-      text-align: center;
-      border-top: 2px solid #d62828;
-      color: #ccc;
-      font-size: 0.9rem;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASL Telecom - Conectando você ao futuro</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <header>
     <div class="container">
-      <img src="logo.png" alt="ASL Telecom" class="logo" />
-
-      <nav class="nav" id="nav">
-        <a href="index.html">Home</a>
-        <a href="planos.html">Planos</a>
-        <a href="telefonia.html">Telefonia</a>
-        <a href="cobertura.html">Cobertura</a>
-        <a href="contato.html">Contato</a>
-        <a href="teste.html">Teste de Velocidade</a>
+      <a href="index.html" class="brand">
+        <img src="logo.png" alt="ASL Telecom" class="logo">
+        <div class="brand-text">
+          <span class="name">ASL Telecomunicações</span>
+          <span class="tag">Internet Fibra • Telefonia VOIP</span>
+        </div>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="planos.html">Planos</a></li>
+          <li><a href="telefonia.html">Telefonia</a></li>
+          <li><a href="cobertura.html">Cobertura</a></li>
+          <li><a href="teste.html">Teste de Velocidade</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
       </nav>
-
-      <button class="hamburger" id="hamburger">☰</button>
+      <div class="actions">
+        <a class="btn btn-ghost" href="https://wa.me/5544984539929" target="_blank">WhatsApp</a>
+      </div>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <h1>Conectamos você ao futuro — Fibra óptica de alta performance</h1>
-      <p>Internet simétrica, baixa latência e suporte local para Mandaguari - PR.</p>
-      <div>
+      <div class="container">
+        <h1>Internet de alta performance com fibra óptica da ASL</h1>
+        <p>Planos rápidos, estáveis e com suporte local — conectando você ao futuro.</p>
         <a class="btn btn-primary" href="planos.html">Ver Planos</a>
-        <a class="btn btn-secondary" href="https://wa.me/5544984539929" target="_blank">Contratar pelo WhatsApp</a>
       </div>
-
-      <div class="highlights">
-        <div><strong>Instalação grátis</strong><br>Sujeita à análise</div>
-        <div><strong>Suporte Local</strong><br>Técnicos em Mandaguari</div>
-        <div><strong>Velocidade Simétrica</strong><br>Upload = Download</div>
-      </div>
-    </section>
-
-    <section class="contact-card">
-      <h3>Fale com um vendedor</h3>
-      <p>📞 Telefone: (44) 3233-0287</p>
-      <p>💬 WhatsApp: <a href="https://wa.me/5544984539929" target="_blank">(44) 9 8453-9929</a></p>
-      <p>📧 Email: <a href="mailto:aslinternet2@gmail.com">aslinternet2@gmail.com</a></p>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 ASL Telecomunicações — Mandaguari - PR</p>
-    <p><a href="https://wa.me/5544984539929" target="_blank" style="color:white;">Fale conosco no WhatsApp</a></p>
+    <div class="container">
+      <p>© 2025 ASL Telecomunicações — Mandaguari - PR</p>
+      <nav class="footer-nav">
+        <a href="planos.html">Planos</a> |
+        <a href="telefonia.html">Telefonia</a> |
+        <a href="cobertura.html">Cobertura</a> |
+        <a href="teste.html">Teste</a> |
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
   </footer>
-
-  <script>
-    const hamburger = document.getElementById("hamburger");
-    const nav = document.getElementById("nav");
-    hamburger.addEventListener("click", () => {
-      nav.classList.toggle("active");
-    });
-  </script>
-
 </body>
 </html>
