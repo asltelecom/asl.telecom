@@ -5,223 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Planos - ASL Telecom</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      background-color: #071a35; /* azul escuro */
-      color: #fff;
-      font-family: "Poppins", sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #06162d;
-      padding: 15px 0;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    nav a:hover, nav a.active {
-      color: #ff3b3b; /* vermelho destaque */
-    }
-
-    .planos-container {
-      max-width: 1200px;
-      margin: 80px auto;
-      padding: 0 20px;
-      text-align: center;
-    }
-
-    .planos-container h1 {
-      font-size: 2.5rem;
-      color: #ff3b3b;
-      margin-bottom: 10px;
-    }
-
-    .planos-container p {
-      color: #cbd3e1;
-      margin-bottom: 50px;
-      font-size: 1.1rem;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 25px;
-    }
-
-    .card {
-      background-color: #ffffff;
-      color: #0a1831;
-      border-radius: 18px;
-      padding: 30px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      border-top: 6px solid #ff3b3b;
-    }
-
-    .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 10px 25px rgba(255,59,59,0.3);
-    }
-
-    .card h2 {
-      font-size: 1.4rem;
-      color: #071a35;
-      margin-bottom: 5px;
-    }
-
-    .card h3 {
-      color: #ff3b3b;
-      font-size: 2.2rem;
-      margin-bottom: 15px;
-    }
-
-    .card ul {
-      list-style: none;
-      padding: 0;
-      margin-bottom: 20px;
-      text-align: left;
-    }
-
-    .card ul li {
-      margin: 8px 0;
-      font-size: 0.95rem;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 28px;
-      background: #ff3b3b;
-      color: #fff;
-      border: none;
-      border-radius: 30px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: background 0.3s, transform 0.3s;
-    }
-
-    .btn:hover {
-      background: #e42f2f;
-      transform: scale(1.05);
-    }
-
-    footer {
-      background-color: #06162d;
-      color: #fff;
-      text-align: center;
-      padding: 20px 10px;
-      margin-top: 80px;
-      font-size: 0.9rem;
-    }
-
-    .whatsapp-link {
-      background: #25d366;
-      padding: 8px 15px;
-      border-radius: 20px;
-      color: #fff !important;
-      font-weight: 600;
-    }
-
-    .logo {
-      height: 50px;
-      margin: 0 auto 10px;
-      display: block;
-    }
-
-    @media (max-width: 600px) {
-      header nav {
-        flex-direction: column;
-      }
-    }
-  </style>
 </head>
 <body>
-
   <header>
-    <img src="logo.png" alt="ASL Telecom" class="logo">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="planos.html" class="active">Planos</a>
-      <a href="telefonia.html">Telefonia</a>
-      <a href="cobertura.html">Cobertura</a>
-      <a href="contato.html">Contato</a>
-      <a href="https://wa.me/5544984539929" class="whatsapp-link">WhatsApp</a>
-    </nav>
+    <div class="container">
+      <a href="index.html" class="brand"><img src="logo.png" class="logo" alt="ASL"></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="planos.html" class="active">Planos</a></li>
+          <li><a href="telefonia.html">Telefonia</a></li>
+          <li><a href="cobertura.html">Cobertura</a></li>
+          <li><a href="teste.html">Teste</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section class="planos-container">
-    <h1>Nossos Planos</h1>
-    <p>Conecte-se com a melhor experiência em fibra óptica, velocidade real e suporte local da ASL Telecom.</p>
-
-    <div class="cards">
-      <div class="card">
-        <h2>Plano Residencial</h2>
-        <h3>200 Mb</h3>
-        <ul>
-          <li>Fibra óptica 100% pura</li>
-          <li>Velocidade simétrica (upload = download)</li>
-          <li>Instalação gratuita*</li>
-          <li>Wi-Fi incluso</li>
-        </ul>
-        <a href="https://wa.me/5544984539929" class="btn">Assinar Agora</a>
+  <main>
+    <section class="container">
+      <h1>Nossos Planos de Internet</h1>
+      <div class="plans">
+        <div class="plan">
+          <h2>200 MEGA</h2>
+          <p>Download e upload simétricos</p>
+          <strong>R$ 89,90/mês</strong>
+        </div>
+        <div class="plan">
+          <h2>400 MEGA</h2>
+          <p>Alta performance para streamings</p>
+          <strong>R$ 109,90/mês</strong>
+        </div>
+        <div class="plan">
+          <h2>600 MEGA</h2>
+          <p>Ideal para gamers e empresas</p>
+          <strong>R$ 129,90/mês</strong>
+        </div>
       </div>
-
-      <div class="card">
-        <h2>Plano Intermediário</h2>
-        <h3>350 Mb</h3>
-        <ul>
-          <li>Ideal para streaming e home office</li>
-          <li>Suporte técnico local</li>
-          <li>Wi-Fi Dual Band incluso</li>
-          <li>Estabilidade garantida</li>
-        </ul>
-        <a href="https://wa.me/5544984539929" class="btn">Assinar Agora</a>
-      </div>
-
-      <div class="card">
-        <h2>Plano Avançado</h2>
-        <h3>500 Mb</h3>
-        <ul>
-          <li>Para múltiplos dispositivos conectados</li>
-          <li>Latência ultrabaixa</li>
-          <li>Instalação gratuita*</li>
-          <li>Wi-Fi potente incluso</li>
-        </ul>
-        <a href="https://wa.me/5544984539929" class="btn">Assinar Agora</a>
-      </div>
-
-      <div class="card">
-        <h2>Plano Premium</h2>
-        <h3>750 Mb</h3>
-        <ul>
-          <li>Ideal para gamers e criadores de conteúdo</li>
-          <li>Alta estabilidade e desempenho</li>
-          <li>Wi-Fi Mesh incluso</li>
-          <li>Suporte prioritário</li>
-        </ul>
-        <a href="https://wa.me/5544984539929" class="btn">Assinar Agora</a>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 ASL Telecomunicações — Conectando você ao futuro</p>
+    <div class="container">
+      <p>© 2025 ASL Telecomunicações</p>
+    </div>
   </footer>
-
 </body>
 </html>
