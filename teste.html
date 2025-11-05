@@ -1,76 +1,48 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teste de Velocidade | ASL Telecom</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Teste de Velocidade - ASL Telecom</title>
   <style>
     body {
-      background-color: #001f3f;
+      background-color: #011c36;
       color: white;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: Arial, sans-serif;
       text-align: center;
+      margin: 0;
     }
     header {
-      padding: 20px 0;
-      background-color: #002a66;
-      border-bottom: 3px solid #ff3333;
+      background-color: #072b56;
+      padding: 15px;
+      border-bottom: 3px solid #d11a1a;
     }
-    .logo {
-      height: 60px;
+    header img {
+      width: 70px;
+      display: block;
+      margin: 0 auto 10px;
     }
-    main {
-      padding: 40px 10px;
+    h1 {
+      font-size: 2em;
+      margin: 5px 0;
     }
     iframe {
-      width: 100%;
+      width: 90%;
       height: 600px;
+      margin: 20px auto;
       border: none;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-      margin-top: 20px;
-    }
-    .btn-voltar {
-      display: inline-block;
-      margin-top: 25px;
-      background-color: #ff3333;
-      color: white;
-      padding: 12px 28px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    .btn-voltar:hover {
-      background-color: #ff5555;
-    }
-    footer {
-      margin-top: 40px;
-      padding: 15px;
-      background-color: #002a66;
-      border-top: 3px solid #ff3333;
-      font-size: 14px;
-      color: #ccc;
+      border-radius: 10px;
+      display: block;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="logo.png" alt="ASL Telecom" class="logo">
+    <img src="logo.png" alt="ASL Telecom">
     <h1>Teste de Velocidade</h1>
     <p>Verifique o desempenho da sua conexão ASL Telecom</p>
   </header>
 
-  <main>
-    <iframe src="https://librespeed.org/speedtest/" allowfullscreen></iframe>
-    <a href="index.html" class="btn-voltar">⬅ Voltar para Home</a>
-  </main>
-
-  <footer>
-    © 2025 ASL Telecomunicações — Internet Fibra Óptica em Mandaguari - PR
-  </footer>
-
+  <iframe src="https://www.speedtest.net/embed" allowfullscreen></iframe>
 </body>
 </html>
