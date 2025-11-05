@@ -3,230 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Telefonia VoIP - ASL Telecom</title>
+  <title>Telefonia - ASL Telecom</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      background-color: #071a35;
-      color: #fff;
-      font-family: "Poppins", sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #06162d;
-      padding: 15px 0;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    nav a:hover, nav a.active {
-      color: #ff3b3b;
-    }
-
-    .whatsapp-link {
-      background: #25d366;
-      padding: 8px 15px;
-      border-radius: 20px;
-      color: #fff !important;
-      font-weight: 600;
-    }
-
-    .logo {
-      height: 50px;
-      margin: 0 auto 10px;
-      display: block;
-    }
-
-    section {
-      max-width: 1200px;
-      margin: 80px auto;
-      padding: 0 20px;
-    }
-
-    .intro {
-      text-align: center;
-    }
-
-    .intro h1 {
-      font-size: 2.5rem;
-      color: #ff3b3b;
-      margin-bottom: 15px;
-    }
-
-    .intro p {
-      font-size: 1.1rem;
-      color: #cbd3e1;
-      margin-bottom: 60px;
-      line-height: 1.6;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-    }
-
-    .card {
-      background-color: #fff;
-      color: #0a1831;
-      border-radius: 18px;
-      padding: 30px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-      border-top: 6px solid #ff3b3b;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 10px 25px rgba(255,59,59,0.3);
-    }
-
-    .card h2 {
-      color: #071a35;
-      margin-bottom: 10px;
-      font-size: 1.4rem;
-    }
-
-    .card p {
-      color: #444;
-      font-size: 0.95rem;
-      line-height: 1.5;
-      margin-bottom: 20px;
-    }
-
-    .price {
-      font-size: 1.6rem;
-      font-weight: 700;
-      color: #ff3b3b;
-      margin-bottom: 15px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 28px;
-      background: #ff3b3b;
-      color: #fff;
-      border: none;
-      border-radius: 30px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: background 0.3s, transform 0.3s;
-    }
-
-    .btn:hover {
-      background: #e42f2f;
-      transform: scale(1.05);
-    }
-
-    footer {
-      background-color: #06162d;
-      color: #fff;
-      text-align: center;
-      padding: 20px 10px;
-      margin-top: 80px;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 600px) {
-      header nav {
-        flex-direction: column;
-      }
-    }
-  </style>
 </head>
 <body>
-
   <header>
-    <img src="logo.png" alt="ASL Telecom" class="logo">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="planos.html">Planos</a>
-      <a href="telefonia.html" class="active">Telefonia</a>
-      <a href="cobertura.html">Cobertura</a>
-      <a href="contato.html">Contato</a>
-      <a href="https://wa.me/5544984539929" class="whatsapp-link">WhatsApp</a>
-    </nav>
+    <div class="container">
+      <a href="index.html" class="brand"><img src="logo.png" class="logo"></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="planos.html">Planos</a></li>
+          <li><a href="telefonia.html" class="active">Telefonia</a></li>
+          <li><a href="cobertura.html">Cobertura</a></li>
+          <li><a href="teste.html">Teste</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section class="intro">
-    <h1>Telefonia VoIP</h1>
-    <p>
-      Com a <strong>Telefonia VoIP da ASL Telecom</strong>, você fala com qualidade HD e paga menos.  
-      Nossos planos são flexíveis, ideais para residências, empresas e provedores, com chamadas ilimitadas e suporte especializado.
-    </p>
-  </section>
-
-  <section class="cards">
-    <div class="card">
-      <h2>Plano Básico</h2>
-      <p>Ideal para quem faz poucas ligações, mas quer qualidade de voz e economia.</p>
-      <p class="price">R$ 29,90/mês</p>
+  <main>
+    <section class="container">
+      <h1>Telefonia VOIP</h1>
+      <p>Tenha qualidade e economia com nossos planos de telefonia digital.</p>
       <ul>
-        <li>✔ 200 minutos inclusos</li>
-        <li>✔ Ligações locais e DDD</li>
-        <li>✔ Chamadas HD</li>
-        <li>✔ Número fixo incluso</li>
+        <li>Chamadas ilimitadas para fixo e celular</li>
+        <li>Portabilidade gratuita</li>
+        <li>Atendimento local e rápido</li>
       </ul>
-      <a href="https://wa.me/5544984539929" class="btn">Assinar</a>
-    </div>
-
-    <div class="card">
-      <h2>Plano Ilimitado Brasil</h2>
-      <p>Fale à vontade para qualquer número fixo ou celular em todo o país, sem se preocupar com minutos.</p>
-      <p class="price">R$ 49,90/mês</p>
-      <ul>
-        <li>✔ Ligações ilimitadas para todo o Brasil</li>
-        <li>✔ Chamadas HD</li>
-        <li>✔ Atendimento e suporte local</li>
-        <li>✔ Número fixo incluso</li>
-      </ul>
-      <a href="https://wa.me/5544984539929" class="btn">Assinar</a>
-    </div>
-
-    <div class="card">
-      <h2>Plano Empresarial</h2>
-      <p>Perfeito para empresas que precisam de várias linhas e ramais integrados.</p>
-      <p class="price">Sob Consulta</p>
-      <ul>
-        <li>✔ Ramais internos ilimitados</li>
-        <li>✔ Gravação de chamadas</li>
-        <li>✔ Relatórios e painéis de controle</li>
-        <li>✔ Atendimento personalizado</li>
-      </ul>
-      <a href="https://wa.me/5544984539929" class="btn">Falar com Consultor</a>
-    </div>
-  </section>
-
-  <section class="intro">
-    <h1>Por que escolher o VoIP da ASL?</h1>
-    <p>
-      💰 Economia de até 70% em relação à telefonia tradicional <br>
-      📶 Qualidade de som cristalina <br>
-      🔄 Portabilidade do seu número atual <br>
-      🌐 Funciona em qualquer conexão de internet <br>
-      💬 Suporte técnico local e rápido
-    </p>
-  </section>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 ASL Telecomunicações — Soluções completas em internet e telefonia VoIP</p>
+    <div class="container"><p>© 2025 ASL Telecomunicações</p></div>
   </footer>
-
 </body>
 </html>
