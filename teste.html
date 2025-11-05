@@ -4,116 +4,77 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Teste de Velocidade - ASL Telecom</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #061a2b;
-      color: #fff;
-    }
-
-    header {
-      background-color: #082b55;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 40px;
-      border-bottom: 3px solid #d80000;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-
-    header img {
-      height: 50px;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      color: #d80000;
-    }
-
-    .container {
-      text-align: center;
-      margin-top: 100px;
-    }
-
-    .card {
-      background-color: #0a2c4b;
-      padding: 50px;
-      border-radius: 15px;
-      width: 50%;
-      margin: 0 auto;
-      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
-    }
-
-    .button {
-      background-color: #d80000;
-      color: white;
-      padding: 15px 30px;
-      border: none;
-      border-radius: 8px;
-      font-size: 18px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .button:hover {
-      background-color: #a40000;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      margin-top: 80px;
-      font-size: 14px;
-      color: #aaa;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
-  <!-- 🔹 Cabeçalho com menu -->
+<body>
   <header>
-    <img src="logo.png" alt="ASL Telecom">
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="planos.html">Planos</a></li>
-        <li><a href="contato.html">Contato</a></li>
-        <li><a href="teste.html" style="color:#d80000;">Teste</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <a href="index.html" class="brand">
+        <img src="logo.png" alt="ASL Telecom" class="logo">
+        <div class="brand-text">
+          <span class="name">ASL Telecomunicações</span>
+          <span class="tag">Internet Fibra • Telefonia VOIP</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="planos.html">Planos</a></li>
+          <li><a href="telefonia.html">Telefonia</a></li>
+          <li><a href="cobertura.html">Cobertura</a></li>
+          <li><a href="teste.html" class="active">Teste de Velocidade</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="actions">
+        <a class="btn btn-ghost" href="https://wa.me/5544984539929" target="_blank">WhatsApp</a>
+        <button class="hamburger" id="hamburger">☰</button>
+      </div>
+    </div>
   </header>
 
-  <!-- 🔹 Conteúdo principal -->
-  <div class="container">
-    <div class="card">
-      <h1>Teste de Velocidade</h1>
-      <p>Verifique o desempenho da sua conexão ASL Telecom.</p>
-      <button class="button" onclick="window.open('https://www.speedtest.net/', '_blank')">Iniciar Teste</button>
-    </div>
-  </div>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Teste sua velocidade de internet</h1>
+          <p>Verifique a performance da sua conexão ASL Telecom em tempo real.</p>
+          <a class="btn btn-primary" href="https://www.speedtest.net/" target="_blank">Iniciar Teste</a>
+        </div>
+      </div>
+    </section>
 
-  <!-- 🔹 Rodapé -->
-  <footer>
-    © 2025 ASL Telecom - Todos os direitos reservados
+    <section class="section container">
+      <h2>Como funciona o teste?</h2>
+      <p>O teste mede sua velocidade de download, upload e latência (ping). Recomendamos fechar outros aplicativos durante o teste para obter um resultado mais preciso.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>ASL Telecomunicações</strong>
+        <p class="muted">© ASL — Conectando você ao futuro.</p>
+      </div>
+      <div>
+        <p class="muted">Mandaguari - Paraná</p>
+        <p class="muted">WhatsApp: <a href="https://wa.me/5544984539929">44984539929</a></p>
+      </div>
+      <div>
+        <p class="muted">Links</p>
+        <nav class="footer-nav">
+          <a href="planos.html">Planos</a>
+          <a href="telefonia.html">Telefonia</a>
+          <a href="cobertura.html">Cobertura</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+      </div>
+    </div>
   </footer>
 
+  <script src="main.js"></script>
 </body>
 </html>
