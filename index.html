@@ -1,221 +1,174 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ASL Telecom — Home</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASL Telecom</title>
   <style>
-    /* ==== ESTILO PRINCIPAL ==== */
-    body {
+    * {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #021d36;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0a0a23;
       color: #fff;
     }
 
     header {
-      background-color: #02152a;
-      border-bottom: 2px solid #d62828;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 15px;
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
+      background: #081138;
+      padding: 15px 30px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
     }
 
     .logo {
-      height: 70px;
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #00bfff;
     }
 
-    .nav {
+    nav ul {
+      list-style: none;
       display: flex;
       gap: 25px;
     }
 
-    .nav a {
-      color: white;
+    nav ul li a {
       text-decoration: none;
+      color: #fff;
       font-weight: 500;
-      transition: 0.3s;
+      transition: color 0.3s;
     }
 
-    .nav a:hover {
-      color: #d62828;
+    nav ul li a:hover {
+      color: #00bfff;
     }
 
-    /* ==== MENU MOBILE ==== */
-    .hamburger {
+    /* Ícone menu (hambúrguer) */
+    .menu-icon {
       display: none;
-      font-size: 26px;
-      background: none;
-      border: none;
-      color: white;
+      flex-direction: column;
       cursor: pointer;
     }
 
+    .menu-icon div {
+      width: 25px;
+      height: 3px;
+      background: white;
+      margin: 4px 0;
+    }
+
     @media (max-width: 768px) {
-      .nav {
+      nav ul {
         display: none;
         flex-direction: column;
+        background: #081138;
         width: 100%;
         text-align: center;
-        background: #031c34;
-        padding: 10px 0;
       }
 
-      .nav.active {
+      nav ul.active {
         display: flex;
       }
 
-      .hamburger {
-        display: block;
-      }
-
-      .container {
-        flex-wrap: wrap;
+      .menu-icon {
+        display: flex;
       }
     }
 
-    /* ==== HERO ==== */
-    .hero {
-      padding: 60px 20px;
+    main {
+      padding: 120px 20px;
       text-align: center;
     }
 
-    .hero h1 {
-      font-size: 2rem;
-      margin-bottom: 15px;
-      color: #fff;
+    section {
+      margin-top: 60px;
     }
 
-    .hero p {
-      color: #ddd;
-      font-size: 1.1rem;
+    h1 {
+      color: #00bfff;
+      margin-bottom: 10px;
     }
 
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      margin: 10px 5px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 600;
+    .teste-container {
+      background: #10152f;
+      padding: 40px;
+      border-radius: 20px;
+      margin: 40px auto;
+      width: 90%;
+      max-width: 700px;
+      box-shadow: 0 0 20px rgba(0, 191, 255, 0.3);
     }
 
-    .btn-primary {
-      background-color: #007bff;
-      color: white;
-    }
-
-    .btn-secondary {
-      background-color: #d62828;
-      color: white;
-    }
-
-    .highlights {
-      margin-top: 25px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .highlights div {
-      background: #03223f;
-      padding: 10px 15px;
-      border-radius: 8px;
-    }
-
-    /* ==== CONTATO ==== */
-    .contact-card {
-      background: #03223f;
-      margin: 50px auto;
-      padding: 20px;
-      max-width: 400px;
-      border-radius: 10px;
-      border-left: 4px solid #d62828;
-    }
-
-    .contact-card h3 {
-      margin-top: 0;
-      color: #fff;
-    }
-
-    .contact-card p a {
-      color: white;
-      text-decoration: underline;
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+      border-radius: 12px;
     }
 
     footer {
-      background-color: #02152a;
-      padding: 25px;
+      margin-top: 60px;
+      padding: 20px;
+      background: #081138;
       text-align: center;
-      border-top: 2px solid #d62828;
       color: #ccc;
-      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <div class="container">
-      <img src="logo.png" alt="ASL Telecom" class="logo" />
-
-      <nav class="nav" id="nav">
-        <a href="index.html">Home</a>
-        <a href="planos.html">Planos</a>
-        <a href="telefonia.html">Telefonia</a>
-        <a href="cobertura.html">Cobertura</a>
-        <a href="contato.html">Contato</a>
-        <a href="teste.html">Teste de Velocidade</a>
-      </nav>
-
-      <button class="hamburger" id="hamburger">☰</button>
+    <div class="logo">ASL Telecom</div>
+    <div class="menu-icon" id="menu-icon">
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
+    <nav>
+      <ul id="menu-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="planos.html">Planos</a></li>
+        <li><a href="telefonia.html">Telefonia</a></li>
+        <li><a href="#teste">Teste de Velocidade</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <h1>Conectamos você ao futuro — Fibra óptica de alta performance</h1>
-      <p>Internet simétrica, baixa latência e suporte local para Mandaguari - PR.</p>
-      <div>
-        <a class="btn btn-primary" href="planos.html">Ver Planos</a>
-        <a class="btn btn-secondary" href="https://wa.me/5544984539929" target="_blank">Contratar pelo WhatsApp</a>
-      </div>
-
-      <div class="highlights">
-        <div><strong>Instalação grátis</strong><br>Sujeita à análise</div>
-        <div><strong>Suporte Local</strong><br>Técnicos em Mandaguari</div>
-        <div><strong>Velocidade Simétrica</strong><br>Upload = Download</div>
-      </div>
+    <section id="home">
+      <h1>Bem-vindo à ASL Telecom</h1>
+      <p>Conectando você ao futuro com a melhor internet da região!</p>
     </section>
 
-    <section class="contact-card">
-      <h3>Fale com um vendedor</h3>
-      <p>📞 Telefone: (44) 3233-0287</p>
-      <p>💬 WhatsApp: <a href="https://wa.me/5544984539929" target="_blank">(44) 9 8453-9929</a></p>
-      <p>📧 Email: <a href="mailto:aslinternet2@gmail.com">aslinternet2@gmail.com</a></p>
+    <section id="teste">
+      <div class="teste-container">
+        <h2>Teste sua Velocidade de Internet</h2>
+        <p>Confira a qualidade da sua conexão abaixo 👇</p>
+        <iframe src="https://embed.speedtest.net" allowfullscreen></iframe>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 ASL Telecomunicações — Mandaguari - PR</p>
-    <p><a href="https://wa.me/5544984539929" target="_blank" style="color:white;">Fale conosco no WhatsApp</a></p>
+    <p>© 2025 ASL Telecom - Todos os direitos reservados</p>
   </footer>
 
   <script>
-    const hamburger = document.getElementById("hamburger");
-    const nav = document.getElementById("nav");
-    hamburger.addEventListener("click", () => {
-      nav.classList.toggle("active");
+    const menuIcon = document.getElementById("menu-icon");
+    const menuList = document.getElementById("menu-list");
+
+    menuIcon.addEventListener("click", () => {
+      menuList.classList.toggle("active");
     });
   </script>
-
 </body>
 </html>
